@@ -1,0 +1,24 @@
+change the code of cache folder making to ensure that it CREATES it if it does not exist (or manually make one yourself)
+# Ignore the virtual environment
+.venv/Include/
+.venv/Lib/
+.venv/Scripts/
+.venv/share/    
+.venv/pyvenv.cfg
+
+# Ignore cache and session data
+.venv/__pycache__/
+.venv/flask_session/
+.venv/temp/
+
+flask_session 
+
+wav2lip/__pycache__/
+wav2lip/cache/
+
+*.pth
+*.txt 
+
+
+
+

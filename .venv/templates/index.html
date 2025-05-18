@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Avatar Chatbot</title>
+  <link rel="stylesheet" href="/static/css/style.css"> 
+</head>
+<body>
+  <h1>Talk with the AI Avatar</h1>
+
+  <div class="input-container">
+    <!-- Text Input Box -->
+    <div class="input-box">
+      <h2>Text Chat</h2>
+      <input type="text" id="user-input" placeholder="Ask something..." />
+      <button onclick="askBot()">Send</button>
+    </div>
+
+    <!-- Audio Input Box -->
+    <div class="input-box">
+      <h2>Voice Chat</h2>
+      <div id="voice-transcription" class="transcription-box">Your speech will appear here...</div>
+      <button id="micBtn">🎤 Tap to Speak</button>
+      <div id="micStatus" style="display:none;">Recording...</div>
+    </div>
+  </div>
+
+  <!-- Message Container with Typing Indicator -->
+  <div id="message-container">
+    <div id="typing-indicator" class="typing-indicator">AI is typing</div>
+  </div>
+
+  <!-- Keep the bot-response div for backward compatibility -->
+  <div id="bot-response" style="display:none;"></div>
+
+  <!-- Avatar Output -->
+  <video id="avatar-video" width="360" height="360" autoplay muted poster="/static/images/placeholder2.jpg"></video>
+  <audio id="avatar-audio"></audio>
+
+  <script src="/static/js/script.js"></script>
+</body>
+</html>
