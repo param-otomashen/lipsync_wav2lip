@@ -1,0 +1,1 @@
+cache from inference.py (face_detect() function) and inference_wrapper.py (generate_video() function) will be saved inside this cache folder
